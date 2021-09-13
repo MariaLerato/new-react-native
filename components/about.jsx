@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, View , Text, StyleSheet} from 'react-native';
+import { SafeAreaView, View , Text, StyleSheet,ScrollView} from 'react-native';
 import { Avatar, Button, Header, ListItem } from 'react-native-elements';
 import { TextInput } from 'react-native-gesture-handler';
 import Users from './users';
@@ -24,6 +24,7 @@ const About = ({ route, navigation }) =>{
     return(
         <>
         <SafeAreaView>
+            <ScrollView>
             <View>
                {
                    userInfo.map(data =>
@@ -50,6 +51,7 @@ const About = ({ route, navigation }) =>{
                     )
                }
             </View>
+            </ScrollView>
         </SafeAreaView>
         </>
     )

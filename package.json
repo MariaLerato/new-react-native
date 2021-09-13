@@ -13,6 +13,7 @@
     "@react-navigation/native-stack": "^6.1.0",
     "expo": "~42.0.1",
     "expo-status-bar": "~1.0.4",
+    "formik": "^2.2.9",
     "metro-config": "^0.66.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -28,7 +29,8 @@
     "react-native-swipeable-item": "^1.5.7",
     "react-native-vector-icons": "^8.1.0",
     "react-native-web": "~0.13.12",
-    "tcomb-form-native": "^0.6.20"
+    "tcomb-form-native": "^0.6.20",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"

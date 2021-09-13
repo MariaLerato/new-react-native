@@ -9,9 +9,13 @@ const Landing = ({navigation}) =>{
   const handleRemove=(e,id)=>{
   e.target.id
 }
+const deleteItem = (index)=>{
+    const arr = [...Users.users];
+    arr.splice(index)
+}
 
     return(
-        <>
+        <ScrollView>
         <SafeAreaView >
             <View style={styles.container}>
             <Header>
@@ -30,14 +34,14 @@ const Landing = ({navigation}) =>{
                         <ListItem.Chevron onPress={()=> navigation.navigate('About',{
                             itemId :action.id
                         })} />
-                        <Button title={"delete"} onPress={handleRemove} />
+                        <Button title={"delete"} onPress={deleteItem} />
                     </ListItem>
                     )
                }
             </View>
             </View>
         </SafeAreaView>
-        </>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create( {

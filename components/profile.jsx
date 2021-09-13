@@ -1,20 +1,20 @@
 import React from 'react';
-import { StyleSheet,View,Text,SafeAreaView,Image } from 'react-native';
+import { StyleSheet,View,Text,SafeAreaView,Image,ScrollView } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 const MyProfile = () =>{
 
     return(
-        <>
-        <View style={{marginTop:-13}}>
-            <View style={{marginTop:-25,alignItems:'center'}}>
+        <ScrollView>
+        <View style={{marginTop:-1}}>
+            <View style={{marginTop:-2,alignItems:'center'}}>
              <Image
                 style={styles.image}  source={require('../assets/mew.jpg')} 
                 >
             </Image>
-            <Text style={{marginTop:-55,fontWeight:'bold',fontSize:25}}>
+            <Text style={{marginTop:-5,fontWeight:'bold',fontSize:25}}>
                 Maria Fenyane
             </Text>
-            <Text style={{marginTop:-7,fontFamily:'cursive'}}>
+            <Text style={{marginTop:3,fontFamily:'cursive'}}>
                 Software Developer
             </Text>
 
@@ -59,8 +59,8 @@ const MyProfile = () =>{
                     </Text>
                     <Text style={{padding:4}}>
                         Software Development Trainee
-                        Codetribe mlab South Africa
-                        Created websites and web applications using Reactjs. Learnt Scrum and Soft-skills
+                       <br /> Codetribe mlab South Africa
+                       <br /> Created websites and web applications using Reactjs. Learnt Scrum and Soft-skills
                     </Text>
                     </View>
                     <Text>
@@ -86,11 +86,12 @@ const MyProfile = () =>{
                     </Text>
                     <Text>
                         Tyson Moyahabo Motlhabeng
-                        CodeTribe Facilitator Mlab Limpopo
-                        tyson@mlab.co.za
-                     <br />   PC Mothata
-                        System Analysis And Design Lecturer Capricorn Tvet college
-                        0714262900
+                       <br/> CodeTribe Facilitator Mlab Limpopo
+                        <br />tyson@mlab.co.za
+                  <br />   <br />   PC Mothata
+                       <br /> System Analysis And Design 
+                       <br />Lecturer Capricorn Tvet college
+                       <br /> 0714262900
                     </Text>
                 </View>
                 <View>
@@ -113,7 +114,7 @@ const MyProfile = () =>{
             </View>
            </View>
            </View>
-        </>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create({
@@ -121,10 +122,10 @@ const styles = StyleSheet.create({
         padding: 10
     },
     image:{
-        width:100,
+        width:150,
         height:300,
         resizeMode:'center',
-        borderRadius:80
+        borderRadius:50
     },
     rightColumn:{
 

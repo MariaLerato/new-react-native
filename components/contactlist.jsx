@@ -1,13 +1,13 @@
 import React from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { Header } from 'react-native-elements';
-import { SafeAreaView,View,Text, StyleSheet } from 'react-native';
+import { SafeAreaView,View,Text, StyleSheet ,ScrollView} from 'react-native';
 
 const Contact = () =>{
     return(
         <>
         <SafeAreaView>
-            <View style={{padding:15}}>
+            <ScrollView style={{padding:15}}>
                 <View>
                     <Header>
                         <Text style={{color:'white',padding:2,fontWeight:'bold',fontSize:30}}>
@@ -43,7 +43,7 @@ const Contact = () =>{
                         </Text>
                     </View>
                 </View>
-            </View>
+            </ScrollView>
         </SafeAreaView>
         </>
     )
